@@ -394,6 +394,16 @@ h2 {
   gap: 24px;
 }
 
+.cards-2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 580px) {
+  .cards-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card {
   background: var(--white);
   border: 1px solid var(--border);

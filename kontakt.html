@@ -1,290 +1,467 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontakt – GRM Feinwerktechnik</title>
-  <meta name="description" content="Kontaktieren Sie GRM Feinwerktechnik in Freden/Leine. Wir freuen uns auf Ihre Anfrage." />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt – GRM Feinwerktechnik</title>
+    <meta
+      name="description"
+      content="Kontaktieren Sie GRM Feinwerktechnik in Freden/Leine. Wir freuen uns auf Ihre Anfrage."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <nav>
+        <a href="index.html" class="nav-logo">
+          <img src="images/Logo.png" alt="GRM Feinwerktechnik" />
+        </a>
+        <div class="nav-toggle" onclick="toggleNav()" aria-label="Menü">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="leistungen.html">Leistungen</a></li>
+          <li><a href="kontakt.html" class="active btn-nav">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- NAVIGATION -->
-<header>
-  <nav>
-    <a href="index.html" class="nav-logo">
-      <img src="images/Logo.png" alt="GRM Feinwerktechnik" />
-    </a>
-    <div class="nav-toggle" onclick="toggleNav()" aria-label="Menü">
-      <span></span><span></span><span></span>
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="section-label">Sprechen Sie uns an</div>
+      <h1>Kontakt</h1>
+      <p>
+        Wir freuen uns auf Ihre Anfrage – nehmen Sie Kontakt zu uns auf und wir
+        finden gemeinsam eine Lösung.
+      </p>
     </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="ueber-uns.html">Über uns</a></li>
-      <li><a href="leistungen.html">Leistungen</a></li>
-      <li><a href="kontakt.html" class="active btn-nav">Kontakt</a></li>
-    </ul>
-  </nav>
-</header>
 
-<!-- PAGE HEADER -->
-<div class="page-header">
-  <div class="section-label">Sprechen Sie uns an</div>
-  <h1>Kontakt</h1>
-  <p>Wir freuen uns auf Ihre Anfrage – nehmen Sie Kontakt zu uns auf und wir finden gemeinsam eine Lösung.</p>
-</div>
+    <!-- KONTAKT -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- KONTAKTDATEN -->
+          <div class="contact-info">
+            <h3>Unsere Kontaktdaten</h3>
 
-<!-- KONTAKT -->
-<section class="section">
-  <div class="container">
-    <div class="contact-grid">
-
-      <!-- KONTAKTDATEN -->
-      <div class="contact-info">
-        <h3>Unsere Kontaktdaten</h3>
-
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div>
-            <strong>Adresse</strong>
-            <p>
-              GRM Feinwerktechnik<br>
-              Straße bitte eintragen<br>
-              PLZ Freden/Leine
-            </p>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          </div>
-          <div>
-            <strong>Telefon</strong>
-            <p><a href="tel:+49000000000">+49 (0) 00 00 – 000 00</a></p>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div>
-            <strong>E-Mail</strong>
-            <p><a href="mailto:info@grm-feinwerktechnik.de">info@grm-feinwerktechnik.de</a></p>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="contact-item-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div>
-            <strong>Öffnungszeiten</strong>
-            <p>
-              Mo–Do: 07:00 – 16:30 Uhr<br>
-              Fr: 07:00 – 13:00 Uhr
-            </p>
-          </div>
-        </div>
-
-        <div style="margin-top: 32px; padding: 20px; background: var(--blue-pale); border-radius: var(--radius); border-left: 4px solid var(--blue-mid);">
-          <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0; line-height: 1.7;">
-            <strong style="color: var(--blue-dark);">Tipp:</strong> Für eine schnelle Angebotsanfrage hängen Sie bitte Ihre Zeichnung oder CAD-Datei als Anhang an Ihre E-Mail.
-          </p>
-        </div>
-      </div>
-
-      <!-- FORMULAR -->
-      <div class="form-card">
-        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 24px; color: var(--blue-dark);">Nachricht senden</h3>
-
-        <!-- Erfolgsmeldung (versteckt bis Absenden) -->
-        <div id="form-success" style="display:none; background:#d4edda; border:1px solid #a8d5b5; border-radius:var(--radius); padding:20px 22px; margin-bottom:20px;">
-          <strong style="color:#1a5c2a; display:block; margin-bottom:4px;">Nachricht erfolgreich gesendet!</strong>
-          <span style="font-size:0.9rem; color:#2d7a3a;">Vielen Dank für Ihre Anfrage. Wir melden uns so schnell wie möglich bei Ihnen.</span>
-        </div>
-
-        <!-- Fehlermeldung (versteckt bis Fehler) -->
-        <div id="form-error" style="display:none; background:#fde8e8; border:1px solid #f5b8b8; border-radius:var(--radius); padding:20px 22px; margin-bottom:20px;">
-          <strong style="color:#8b1a1a; display:block; margin-bottom:4px;">Fehler beim Senden</strong>
-          <span style="font-size:0.9rem; color:#a03030;">Bitte versuchen Sie es erneut oder schreiben Sie uns direkt per E-Mail.</span>
-        </div>
-
-        <form id="kontaktForm">
-          <!-- Formsubmit Konfiguration -->
-          <input type="hidden" name="_subject" value="Neue Anfrage – GRM Feinwerktechnik" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-
-          <!-- Honeypot: für Menschen unsichtbar, Bots füllen es aus -->
-          <div class="hp-field" aria-hidden="true">
-            <label for="hp_website">Website leer lassen</label>
-            <input type="text" id="hp_website" name="hp_website" autocomplete="off" tabindex="-1" />
-          </div>
-
-          <!-- Zeitstempel (wird per JS gesetzt) -->
-          <input type="hidden" id="form-timestamp" />
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="vorname">Vorname *</label>
-              <input type="text" id="vorname" name="vorname" required placeholder="Max" />
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <strong>Adresse</strong>
+                <p>
+                  GRM Feinwerktechnik<br />
+                  Steinkampstraße 1A<br />
+                  31084 Freden/Leine
+                </p>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="nachname">Nachname *</label>
-              <input type="text" id="nachname" name="nachname" required placeholder="Mustermann" />
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <strong>Telefon</strong>
+                <p><a href="tel:+49000000000">05184/950 951</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <strong>E-Mail</strong>
+                <p>
+                  <a href="mailto:info@grm-feinwerktechnik.de"
+                    >info@grm-feinwerktechnik.de</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div>
+                <strong>Öffnungszeiten</strong>
+                <p>
+                  Mo–Do: 07:00 – 16:30 Uhr<br />
+                  Fr: 07:00 – 13:00 Uhr
+                </p>
+              </div>
+            </div>
+
+            <div
+              style="
+                margin-top: 32px;
+                padding: 20px;
+                background: var(--blue-pale);
+                border-radius: var(--radius);
+                border-left: 4px solid var(--blue-mid);
+              "
+            >
+              <p
+                style="
+                  font-size: 0.88rem;
+                  color: var(--text-muted);
+                  margin: 0;
+                  line-height: 1.7;
+                "
+              >
+                <strong style="color: var(--blue-dark)">Tipp:</strong> Für eine
+                schnelle Angebotsanfrage hängen Sie bitte Ihre Zeichnung oder
+                CAD-Datei als Anhang an Ihre E-Mail.
+              </p>
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="firma">Firma</label>
-            <input type="text" id="firma" name="firma" placeholder="Musterfirma GmbH" />
+          <!-- FORMULAR -->
+          <div class="form-card">
+            <h3
+              style="
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin-bottom: 24px;
+                color: var(--blue-dark);
+              "
+            >
+              Nachricht senden
+            </h3>
+
+            <!-- Erfolgsmeldung (versteckt bis Absenden) -->
+            <div
+              id="form-success"
+              style="
+                display: none;
+                background: #d4edda;
+                border: 1px solid #a8d5b5;
+                border-radius: var(--radius);
+                padding: 20px 22px;
+                margin-bottom: 20px;
+              "
+            >
+              <strong style="color: #1a5c2a; display: block; margin-bottom: 4px"
+                >Nachricht erfolgreich gesendet!</strong
+              >
+              <span style="font-size: 0.9rem; color: #2d7a3a"
+                >Vielen Dank für Ihre Anfrage. Wir melden uns so schnell wie
+                möglich bei Ihnen.</span
+              >
+            </div>
+
+            <!-- Fehlermeldung (versteckt bis Fehler) -->
+            <div
+              id="form-error"
+              style="
+                display: none;
+                background: #fde8e8;
+                border: 1px solid #f5b8b8;
+                border-radius: var(--radius);
+                padding: 20px 22px;
+                margin-bottom: 20px;
+              "
+            >
+              <strong style="color: #8b1a1a; display: block; margin-bottom: 4px"
+                >Fehler beim Senden</strong
+              >
+              <span style="font-size: 0.9rem; color: #a03030"
+                >Bitte versuchen Sie es erneut oder schreiben Sie uns direkt per
+                E-Mail.</span
+              >
+            </div>
+
+            <form id="kontaktForm">
+              <!-- Formsubmit Konfiguration -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="Neue Anfrage – GRM Feinwerktechnik"
+              />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <!-- Honeypot: für Menschen unsichtbar, Bots füllen es aus -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="hp_website">Website leer lassen</label>
+                <input
+                  type="text"
+                  id="hp_website"
+                  name="hp_website"
+                  autocomplete="off"
+                  tabindex="-1"
+                />
+              </div>
+
+              <!-- Zeitstempel (wird per JS gesetzt) -->
+              <input type="hidden" id="form-timestamp" />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="vorname">Vorname *</label>
+                  <input
+                    type="text"
+                    id="vorname"
+                    name="vorname"
+                    required
+                    placeholder="Max"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="nachname">Nachname *</label>
+                  <input
+                    type="text"
+                    id="nachname"
+                    name="nachname"
+                    required
+                    placeholder="Mustermann"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="firma">Firma</label>
+                <input
+                  type="text"
+                  id="firma"
+                  name="firma"
+                  placeholder="Musterfirma GmbH"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-Mail-Adresse *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="max@musterfirma.de"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="telefon">Telefon</label>
+                <input
+                  type="tel"
+                  id="telefon"
+                  name="telefon"
+                  placeholder="+49 (0) 123 456789"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="betreff">Betreff *</label>
+                <select id="betreff" name="betreff" required>
+                  <option value="">Bitte wählen …</option>
+                  <option value="Angebotsanfrage CNC-Drehen">
+                    Angebotsanfrage CNC-Drehen
+                  </option>
+                  <option value="Angebotsanfrage CNC-Fräsen">
+                    Angebotsanfrage CNC-Fräsen
+                  </option>
+                  <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
+                  <option value="Sonstiges">Sonstiges</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="nachricht">Ihre Nachricht *</label>
+                <textarea
+                  id="nachricht"
+                  name="nachricht"
+                  required
+                  placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Frage …"
+                ></textarea>
+              </div>
+
+              <div
+                class="form-group"
+                style="
+                  display: flex;
+                  align-items: flex-start;
+                  gap: 10px;
+                  margin-bottom: 8px;
+                "
+              >
+                <input
+                  type="checkbox"
+                  id="datenschutz"
+                  name="datenschutz"
+                  required
+                  style="width: auto; margin-top: 3px; flex-shrink: 0"
+                />
+                <label
+                  for="datenschutz"
+                  style="
+                    font-size: 0.82rem;
+                    font-weight: 400;
+                    color: var(--text-muted);
+                    cursor: pointer;
+                  "
+                >
+                  Ich habe die
+                  <a href="datenschutz.html" target="_blank"
+                    >Datenschutzerklärung</a
+                  >
+                  gelesen und stimme der Verarbeitung meiner Daten zu. *
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                id="submitBtn"
+                class="btn btn-primary"
+                style="
+                  width: 100%;
+                  justify-content: center;
+                  margin-top: 8px;
+                  font-size: 1rem;
+                "
+              >
+                Nachricht senden
+              </button>
+
+              <p class="form-note">
+                * Pflichtfelder. Ihre Daten werden ausschließlich zur
+                Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte
+                weitergegeben. Weitere Informationen in unserer
+                <a href="datenschutz.html">Datenschutzerklärung</a>.
+              </p>
+            </form>
           </div>
-
-          <div class="form-group">
-            <label for="email">E-Mail-Adresse *</label>
-            <input type="email" id="email" name="email" required placeholder="max@musterfirma.de" />
-          </div>
-
-          <div class="form-group">
-            <label for="telefon">Telefon</label>
-            <input type="tel" id="telefon" name="telefon" placeholder="+49 (0) 123 456789" />
-          </div>
-
-          <div class="form-group">
-            <label for="betreff">Betreff *</label>
-            <select id="betreff" name="betreff" required>
-              <option value="">Bitte wählen …</option>
-              <option value="Angebotsanfrage CNC-Drehen">Angebotsanfrage CNC-Drehen</option>
-              <option value="Angebotsanfrage CNC-Fräsen">Angebotsanfrage CNC-Fräsen</option>
-              <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
-              <option value="Sonstiges">Sonstiges</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="nachricht">Ihre Nachricht *</label>
-            <textarea id="nachricht" name="nachricht" required placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Frage …"></textarea>
-          </div>
-
-          <div class="form-group" style="display:flex; align-items:flex-start; gap:10px; margin-bottom:8px;">
-            <input type="checkbox" id="datenschutz" name="datenschutz" required style="width:auto; margin-top:3px; flex-shrink:0;" />
-            <label for="datenschutz" style="font-size:0.82rem; font-weight:400; color:var(--text-muted); cursor:pointer;">
-              Ich habe die <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu. *
-            </label>
-          </div>
-
-          <button type="submit" id="submitBtn" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:8px; font-size:1rem;">
-            Nachricht senden
-          </button>
-
-          <p class="form-note">
-            * Pflichtfelder. Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet
-            und nicht an Dritte weitergegeben. Weitere Informationen in unserer
-            <a href="datenschutz.html">Datenschutzerklärung</a>.
-          </p>
-        </form>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="text-decoration: none">
+            <img src="images/Logo.png" alt="GRM Feinwerktechnik" />
+          </a>
+          <p>
+            Ihr Partner für hochwertige Zerspanungstechnik in Freden/Leine –
+            CNC-Drehen und CNC-Fräsen mit über 25 Jahren Erfahrung.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="index.html">Home</a>
+          <a href="ueber-uns.html">Über uns</a>
+          <a href="leistungen.html">Leistungen &amp; Maschinenpark</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 GRM Feinwerktechnik. Alle Rechte vorbehalten.</span>
+        <span>
+          <a href="impressum.html">Impressum</a> &nbsp;·&nbsp;
+          <a href="datenschutz.html">Datenschutz</a>
+        </span>
+        <span style="color: rgba(255, 255, 255, 0.35); font-size: 0.75rem"
+          >Entwickelt von Eaven-René Schmalz</span
+        >
+      </div>
+    </footer>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <a href="index.html" class="nav-logo" style="text-decoration:none;">
-        <img src="images/Logo.png" alt="GRM Feinwerktechnik" />
-      </a>
-      <p>Ihr Partner für hochwertige Zerspanungstechnik in Freden/Leine – CNC-Drehen und CNC-Fräsen mit über 25 Jahren Erfahrung.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Navigation</h4>
-      <a href="index.html">Home</a>
-      <a href="ueber-uns.html">Über uns</a>
-      <a href="leistungen.html">Leistungen &amp; Maschinenpark</a>
-      <a href="kontakt.html">Kontakt</a>
-    </div>
-    <div class="footer-col">
-      <h4>Rechtliches</h4>
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>&copy; 2025 GRM Feinwerktechnik. Alle Rechte vorbehalten.</span>
-    <span>
-      <a href="impressum.html">Impressum</a> &nbsp;·&nbsp;
-      <a href="datenschutz.html">Datenschutz</a>
-    </span>
-    <span style="color: rgba(255,255,255,0.35); font-size: 0.75rem;">Entwickelt von Eaven-René Schmalz</span>
-  </div>
-</footer>
-
-<script>
-  function toggleNav() {
-    document.getElementById('navLinks').classList.toggle('open');
-  }
-
-  // Zeitstempel setzen sobald die Seite geladen ist
-  document.getElementById('form-timestamp').value = Date.now();
-
-  document.getElementById('kontaktForm').addEventListener('submit', async function (e) {
-    e.preventDefault();
-
-    const btn = document.getElementById('submitBtn');
-    const successBox = document.getElementById('form-success');
-    const errorBox = document.getElementById('form-error');
-
-    // ── Honeypot-Prüfung ──────────────────────────────────────
-    // Bots füllen das versteckte Feld aus — Menschen nicht
-    if (document.getElementById('hp_website').value !== '') {
-      return; // Bot erkannt, still ignorieren
-    }
-
-    // ── Zeitprüfung ───────────────────────────────────────────
-    // Formulare die in unter 3 Sekunden abgesendet werden = Bot
-    const elapsed = Date.now() - parseInt(document.getElementById('form-timestamp').value);
-    if (elapsed < 3000) {
-      return; // Zu schnell, still ignorieren
-    }
-
-    // ── Absenden via Formsubmit AJAX ──────────────────────────
-    btn.disabled = true;
-    btn.textContent = 'Wird gesendet …';
-    successBox.style.display = 'none';
-    errorBox.style.display = 'none';
-
-    const formData = new FormData(this);
-
-    try {
-      // ↓ Hier Ihre E-Mail-Adresse eintragen
-      const res = await fetch('https://formsubmit.co/ajax/schmalze6@gmail.com', {
-        method: 'POST',
-        body: formData,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (res.ok) {
-        successBox.style.display = 'block';
-        successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        this.reset();
-        // Zeitstempel zurücksetzen für ggf. weitere Nutzung
-        document.getElementById('form-timestamp').value = Date.now();
-      } else {
-        errorBox.style.display = 'block';
+    <script>
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
       }
-    } catch (_) {
-      errorBox.style.display = 'block';
-    } finally {
-      btn.disabled = false;
-      btn.textContent = 'Nachricht senden';
-    }
-  });
-</script>
-</body>
+
+      // Zeitstempel setzen sobald die Seite geladen ist
+      document.getElementById("form-timestamp").value = Date.now();
+
+      document
+        .getElementById("kontaktForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const btn = document.getElementById("submitBtn");
+          const successBox = document.getElementById("form-success");
+          const errorBox = document.getElementById("form-error");
+
+          // ── Honeypot-Prüfung ──────────────────────────────────────
+          // Bots füllen das versteckte Feld aus — Menschen nicht
+          if (document.getElementById("hp_website").value !== "") {
+            return; // Bot erkannt, still ignorieren
+          }
+
+          // ── Zeitprüfung ───────────────────────────────────────────
+          // Formulare die in unter 3 Sekunden abgesendet werden = Bot
+          const elapsed =
+            Date.now() -
+            parseInt(document.getElementById("form-timestamp").value);
+          if (elapsed < 3000) {
+            return; // Zu schnell, still ignorieren
+          }
+
+          // ── Absenden via Formsubmit AJAX ──────────────────────────
+          btn.disabled = true;
+          btn.textContent = "Wird gesendet …";
+          successBox.style.display = "none";
+          errorBox.style.display = "none";
+
+          const formData = new FormData(this);
+
+          try {
+            // ↓ Hier Ihre E-Mail-Adresse eintragen
+            const res = await fetch(
+              "https://formsubmit.co/ajax/schmalze6@gmail.com",
+              {
+                method: "POST",
+                body: formData,
+                headers: { Accept: "application/json" },
+              },
+            );
+
+            if (res.ok) {
+              successBox.style.display = "block";
+              successBox.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+              });
+              this.reset();
+              // Zeitstempel zurücksetzen für ggf. weitere Nutzung
+              document.getElementById("form-timestamp").value = Date.now();
+            } else {
+              errorBox.style.display = "block";
+            }
+          } catch (_) {
+            errorBox.style.display = "block";
+          } finally {
+            btn.disabled = false;
+            btn.textContent = "Nachricht senden";
+          }
+        });
+    </script>
+  </body>
 </html>

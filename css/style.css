@@ -12,7 +12,7 @@
   --blue-mid: #2563a8;
   --blue-light: #3b82c4;
   --blue-pale: #e8f0fb;
-  --accent: #f0a500;
+  --accent: #2a9d8f;
   --text-dark: #1a1a2e;
   --text-muted: #5a6478;
   --white: #ffffff;
@@ -134,7 +134,7 @@ nav {
 }
 
 .nav-links a.btn-nav:hover {
-  background: #d49300;
+  background: #217a6f;
   color: var(--text-dark);
 }
 
@@ -261,7 +261,7 @@ nav {
 }
 
 .btn-primary:hover {
-  background: #d49300;
+  background: #217a6f;
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   text-decoration: none;

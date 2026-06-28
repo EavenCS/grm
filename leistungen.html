@@ -177,73 +177,176 @@
           Übersicht unserer wichtigsten Fertigungsmaschinen.
         </p>
 
-        <table class="maschinen-table">
-          <colgroup>
-            <col style="width: 42%" />
-            <col style="width: 33%" />
-            <col style="width: 25%" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th>Maschine</th>
-              <th>Typ / Hersteller</th>
-              <th>Bearbeitungsbereich</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>CNC-Drehmaschine 1</strong></td>
-              <td>Weiler E70</td>
-              <td>Ø 400 mm × 1.700 mm</td>
-            </tr>
-            <tr>
-              <td><strong>CNC-Drehmaschine 2</strong></td>
-              <td>Weiler W570</td>
-              <td>Ø 300 mm × 2.000 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Konventionelle Kopfdrehbank (3 m)</strong></td>
-              <td>Zerbst</td>
-              <td>Ø 3.000 mm × 600 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Konventionelles Bohrwerk 1</strong></td>
-              <td>Union</td>
-              <td>
-                Tisch: 1.100 × 1.000 mm, X: 900 mm, Y: 1.000 mm, Z: 2.000 mm
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Konventionelles Bohrwerk 2</strong></td>
-              <td>Union</td>
-              <td>
-                Tisch: 2.000 × 2.000 mm, X: 2.800 mm, Y: 2.000 mm, Z: 2.500 mm
-              </td>
-            </tr>
-            <tr>
-              <td><strong>CNC-Fräsmaschine 1</strong></td>
-              <td>CMA BRD 1200</td>
-              <td>X: 1.200 mm, Y: 1.000 mm, Z: 400 mm</td>
-            </tr>
-            <tr>
-              <td><strong>CNC-Fräsmaschine 2</strong></td>
-              <td>CMA CRD</td>
-              <td>X: 6.000 mm, Y: 1.800 mm, Z: 680 mm</td>
-            </tr>
-            <tr>
-              <td><strong>CNC-Fräsmaschine 3</strong></td>
-              <td>CMA 3RD CNC</td>
-              <td>X: 6.000 mm, Y: 500 mm, Z: 500 mm</td>
-            </tr>
-            <tr>
-              <td><strong>CNC-Fräsmaschine 3</strong></td>
-              <td>Weipert</td>
-              <td>
-                Futter Ø 500 mm, Überplanschlitten 540 mm, Drehlänge 500 mm
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="maschinen-table-wrap">
+          <table class="maschinen-table">
+            <colgroup>
+              <col style="width: 32%" />
+              <col style="width: 22%" />
+              <col style="width: 46%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Maschine</th>
+                <th>Hersteller / Typ</th>
+                <th>Bearbeitungsbereich</th>
+              </tr>
+            </thead>
+
+            <!-- DREHEN -->
+            <tbody>
+              <tr class="maschinen-group-row">
+                <td colspan="3">
+                  <div class="maschinen-group-label">
+                    <span class="maschinen-group-icon">
+                      <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9" />
+                        <circle cx="12" cy="12" r="3" />
+                      </svg>
+                    </span>
+                    <span class="maschinen-group-title">Drehen</span>
+                    <span class="maschinen-group-count">4 Maschinen</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="maschinen-name">CNC-Drehmaschine 1</td>
+                <td class="maschinen-vendor">Weiler E70</td>
+                <td>
+                  <div class="maschinen-specs">
+                    <span class="maschinen-badge">Ø 400 mm</span>
+                    <span class="maschinen-badge">L 1.700 mm</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="maschinen-name">CNC-Drehmaschine 2</td>
+                <td class="maschinen-vendor">Weiler W570</td>
+                <td>
+                  <div class="maschinen-specs">
+                    <span class="maschinen-badge">Ø 300 mm</span>
+                    <span class="maschinen-badge">L 2.000 mm</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="maschinen-name">Konventionelle Kopfdrehbank (3 m)</td>
+                <td class="maschinen-vendor">Zerbst</td>
+                <td>
+                  <div class="maschinen-specs">
+                    <span class="maschinen-badge">Ø 3.000 mm</span>
+                    <span class="maschinen-badge">L 600 mm</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="maschinen-name">Konventionelle Drehmaschine</td>
+                <td class="maschinen-vendor">Weipert</td>
+                <td>
+                  <div class="maschinen-specs">
+                    <span class="maschinen-badge">Futter Ø 500 mm</span>
+                    <span class="maschinen-badge">Überplanschlitten 540 mm</span>
+                    <span class="maschinen-badge">Drehlänge 500 mm</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+
+            <!-- BOHREN -->
+            <tbody>
+              <tr class="maschinen-group-row">
+                <td colspan="3">
+                  <div class="maschinen-group-label">
+                    <span class="maschinen-group-icon">
+                      <svg viewBox="0 0 24 24">
+                        <line x1="12" y1="2" x2="12" y2="14" />
+                        <path d="M8 14h8l-2 6h-4z" />
+                      </svg>
+                    </span>
+                    <span class="maschinen-group-title">Bohren</span>
+                    <span class="maschinen-group-count">2 Maschinen</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="maschinen-name">Konventionelles Bohrwerk 1</td>
+                <td class="maschinen-vendor">Union</td>
+                <td>
+                  <div class="maschinen-specs">
+                    <span class="maschinen-badge">Tisch 1.100 × 1.000 mm</span>
+                    <span class="maschinen-badge">X 900 mm</span>
+                    <span class="maschinen-badge">Y 1.000 mm</span>
+                    <span class="maschinen-badge">Z 2.000 mm</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="maschinen-name">Konventionelles Bohrwerk 2</td>
+                <td class="maschinen-vendor">Union</td>
+                <td>
+                  <div class="maschinen-specs">
+                    <span class="maschinen-badge">Tisch 2.000 × 2.000 mm</span>
+                    <span class="maschinen-badge">X 2.800 mm</span>
+                    <span class="maschinen-badge">Y 2.000 mm</span>
+                    <span class="maschinen-badge">Z 2.500 mm</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+
+            <!-- FRÄSEN -->
+            <tbody>
+              <tr class="maschinen-group-row">
+                <td colspan="3">
+                  <div class="maschinen-group-label">
+                    <span class="maschinen-group-icon">
+                      <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                          d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"
+                        />
+                      </svg>
+                    </span>
+                    <span class="maschinen-group-title">Fräsen</span>
+                    <span class="maschinen-group-count">3 Maschinen</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="maschinen-name">CNC-Fräsmaschine 1</td>
+                <td class="maschinen-vendor">CMA BRD 1200</td>
+                <td>
+                  <div class="maschinen-specs">
+                    <span class="maschinen-badge">X 1.200 mm</span>
+                    <span class="maschinen-badge">Y 1.000 mm</span>
+                    <span class="maschinen-badge">Z 400 mm</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="maschinen-name">CNC-Fräsmaschine 2</td>
+                <td class="maschinen-vendor">CMA CRD</td>
+                <td>
+                  <div class="maschinen-specs">
+                    <span class="maschinen-badge">X 6.000 mm</span>
+                    <span class="maschinen-badge">Y 1.800 mm</span>
+                    <span class="maschinen-badge">Z 680 mm</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="maschinen-name">CNC-Fräsmaschine 3</td>
+                <td class="maschinen-vendor">CMA 3RD CNC</td>
+                <td>
+                  <div class="maschinen-specs">
+                    <span class="maschinen-badge">X 6.000 mm</span>
+                    <span class="maschinen-badge">Y 500 mm</span>
+                    <span class="maschinen-badge">Z 500 mm</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 

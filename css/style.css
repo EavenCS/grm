@@ -728,13 +728,17 @@ h2 {
 .img-placeholder.logo-frame {
   background: var(--white);
   border: 1px solid var(--blue-pale);
-  padding: 40px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
 .img-placeholder.logo-frame img {
-  max-width: 80%;
-  max-height: 80%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 /* ===== SERVICE PHOTO CARDS ===== */
@@ -887,12 +891,17 @@ h2 {
 }
 
 /* ===== MASCHINEN TABLE ===== */
+.maschinen-table-wrap {
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
 .maschinen-table {
   width: 100%;
   border-collapse: collapse;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
   font-size: 0.92rem;
 }
 
@@ -902,27 +911,110 @@ h2 {
 }
 
 .maschinen-table th {
-  padding: 14px 20px;
+  padding: 16px 24px;
   text-align: left;
-  font-size: 0.82rem;
-  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .maschinen-table td {
-  padding: 14px 20px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.maschinen-table tbody tr:last-child td {
   border-bottom: 1px solid var(--border);
 }
 
-.maschinen-table tbody tr {
-  background: var(--white);
+.maschinen-table tbody:last-child tr:last-child td {
+  border-bottom: none;
 }
-.maschinen-table tbody tr:nth-child(even) {
-  background: var(--bg-light);
-}
-.maschinen-table tbody tr:hover {
+
+.maschinen-table tbody tr:not(.maschinen-group-row):hover {
   background: var(--blue-pale);
+}
+
+.maschinen-group-row td {
+  background: var(--bg-light);
+  padding: 14px 24px;
+  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+}
+
+.maschinen-group-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.maschinen-group-icon {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--blue-dark), var(--blue-mid));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(26, 60, 110, 0.2);
+}
+
+.maschinen-group-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: var(--white);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.maschinen-group-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--blue-dark);
+  letter-spacing: 0.01em;
+}
+
+.maschinen-group-count {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.maschinen-name {
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+.maschinen-vendor {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.maschinen-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.maschinen-badge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--blue-pale);
+  color: var(--blue-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 20px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 /* ===== CONTACT ===== */
@@ -1228,12 +1320,33 @@ footer {
     text-align: center;
   }
 
-  .maschinen-table {
-    font-size: 0.82rem;
-  }
-  .maschinen-table th,
+  .maschinen-table,
+  .maschinen-table thead,
+  .maschinen-table tbody,
+  .maschinen-table tr,
   .maschinen-table td {
-    padding: 10px 12px;
+    display: block;
+    width: 100%;
+  }
+  .maschinen-table thead {
+    display: none;
+  }
+  .maschinen-table tbody tr:not(.maschinen-group-row) {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .maschinen-table tbody tr:not(.maschinen-group-row) td {
+    padding: 4px 0;
+    border: none;
+  }
+  .maschinen-group-row td {
+    padding: 14px 18px;
+  }
+  .maschinen-name {
+    font-size: 1rem;
+  }
+  .maschinen-group-count {
+    font-size: 0.68rem;
   }
 
   .section {

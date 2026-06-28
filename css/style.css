@@ -725,6 +725,18 @@ h2 {
   stroke-width: 1.5;
 }
 
+.img-placeholder.logo-frame {
+  background: var(--white);
+  border: 1px solid var(--blue-pale);
+  padding: 40px;
+}
+
+.img-placeholder.logo-frame img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
 /* ===== SERVICE PHOTO CARDS ===== */
 .service-photo-grid {
   display: grid;
